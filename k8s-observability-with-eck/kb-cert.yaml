@@ -1,0 +1,31 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kb-ca
+  namespace: kube-system
+  labels:
+    k8s-app: kb-ca
+    kubernetes.io/cluster-service: "true"
+data:
+  ca.pem: |-
+    -----BEGIN CERTIFICATE-----
+    MIIDOTCCAiGgAwIBAgIQaBF95r37G0miUKgIPQlkkzANBgkqhkiG9w0BAQsFADAn
+    MQ8wDQYDVQQLEwZraWJhbmExFDASBgNVBAMTC2tpYmFuYS1odHRwMB4XDTIzMDIy
+    NTEzMzU1M1oXDTI0MDIyNTEzNDU1M1owJzEPMA0GA1UECxMGa2liYW5hMRQwEgYD
+    VQQDEwtraWJhbmEtaHR0cDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+    AMtFg4/V8K8d0YAJ3pWUO3YTsh2JmIwAk4BJATs8QN16sd9N3SZgnlcDq011Yggm
+    L0iURX4ff4/DEvGm0mPX22aP1K5AutDzK3dR10YB33EKGTsBMkKmEcaPmn8TXYOr
+    gMoKqtz3hbPePaBaOxWsEJZmr/C8SUm7TRkiCCMpcDiU25Plu4GQa9mtAdSXMvoL
+    4ige1eaRYf3cJhbHAZmhZYt9dkbgiPkzwVxk7zseiiEOwPpOdB/tmGiHOjiJjhbA
+    pAXBp9wwD/Pfx0sJHyb0eVjBs+XQ7QHKYm0Rfjc9YZFyIvNMLMpZXxXygle6gBjf
+    wDUtgX7BYkHG1WhIBjjckFECAwEAAaNhMF8wDgYDVR0PAQH/BAQDAgKEMB0GA1Ud
+    JQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAPBgNVHRMBAf8EBTADAQH/MB0GA1Ud
+    DgQWBBT2yimSIwkXeFobbxwgbMuP4iitjzANBgkqhkiG9w0BAQsFAAOCAQEASMbD
+    XoVQ2oxV6c3eBBJdhYNYQtbkVU6ajpS0anapgo9vsv+NEu1WbtyboHTK0MlEBlrm
+    WmxQtIZmlRyzj2UuA0ua+pMzYjsLIykTp+Cz/tfveA5ySbK1XsxTUMscOOBieZaN
+    16PM1aPT77J9GFs6th1OTSjewd1JQy7d8CpCo9nVmxkmSWBxaa5eMRrLh4mo7WoN
+    b6oUIXL5bthUOhzyZvTtUySmZy2PdFb90Ok6DVBy6xbgtNBJaHy3d+FMiAqgUwCG
+    ASsVs5szDEZakZQJeJjrRvVj2vhfgvby14gBCq+hQ/RqvnItHEh56ePiwddJKews
+    WMmDWaXI0c10zVMnYw==
+    -----END CERTIFICATE-----
